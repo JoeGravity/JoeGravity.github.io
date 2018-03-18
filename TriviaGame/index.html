@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Totally Trivial Triviaaah!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/trivia.css" />
+    <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+    <style>
+        body {
+            text-align: center;
+            margin: auto;
+            background: linear-gradient(to right, rgb(237, 130, 0), rgb(40, 16, 0), rgb(26, 0, 0), rgb(237, 130, 0));
+            background-size: cover;
+            color: rgb(255, 246, 165);
+        }
+        h1 {
+            font-size: 24mm;
+            font-family: 'Rammetto One', cursive;
+        }
+        h2 {
+            font-size: 16mm;
+            font-family: 'Rammetto One', cursive;
+        }
+        h3 {
+            font-size: 10mm;
+            color: rgb(237, 130, 0);
+            font-family: 'Rammetto One', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My kids love BUNNIES!</h1>
+    <button id="start">CLICK TO START</button>
+    <div id="quizBox">
+        <h2>Time remaining:
+            <span id="timeLeft"></span>
+        </h2>
+        <form>
+            <div class="question">
+                <h3>Does Milo love Bunnies?</h3>
+                <input type="radio" name="q1" value="a"> Yes
+                <input type="radio" name="q1" value="b"> No
+                <input type="radio" name="q1" value="c"> Maybe
+                <input type="radio" name="q1" value="d"> I don't know
+            </div>
+            <div class="question">
+                <h3>Does Bailey love Bunnies?</h3>
+                <input type="radio" name="q2" value="a"> Yes
+                <input type="radio" name="q2" value="b"> No
+                <input type="radio" name="q2" value="c"> Maybe
+                <input type="radio" name="q2" value="d"> I don't know
+            </div>
+            <div class="question">
+                <h3>Does Mommy love Bunnies?</h3>
+                <input type="radio" name="q3" value="a"> Yes
+                <input type="radio" name="q3" value="b"> No
+                <input type="radio" name="q3" value="c"> Maybe
+                <input type="radio" name="q3" value="d"> I don't know
+            </div>
+            <div class="question">
+                <h3>Is Milo allergic to Bunnies?</h3>
+                <input type="radio" name="q4" value="a"> Yes
+                <input type="radio" name="q4" value="b"> No
+                <input type="radio" name="q4" value="c"> Maybe
+                <input type="radio" name="q4" value="d"> I don't know
+            </div>
+            <br>
+            <input type="submit" id="doneBtn" />
+            <!-- <button id='done' onclick="return tally();" type="submit">Done</button> -->
+        </form>
+    </div>
+    <div id="scorebox">
+        <h2 id="annc"></h2>
+        <h3>
+            Correct answers:
+            <span id="wahr"></span>
+            <br> Incorrect answers:
+            <span id="falsch"></span>
+            <br> Unanswered questions:
+            <span id="missed"></span>
+        </h3>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
