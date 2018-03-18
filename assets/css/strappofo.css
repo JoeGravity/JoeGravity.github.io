@@ -1,0 +1,67 @@
+h2,
+h3 {
+    font-family: "Georgia", Times, Times New Roman, serif;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-size: xx-large;
+    font-family: "Georgia", Times, Times New Roman, serif;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.bg-primary,
+.btn-primary {
+    background-color: #4aaaa5 !important;
+}
+
+.main {
+    z-index: -5;
+    border-top: .1rem solid #ccc;
+    background-image: url("../images/hypnotize.png");
+    padding: 1.5rem 0 1.5rem 0;
+    position: fixed;
+    bottom: 0;
+    top: 74px;
+    width: 100%;
+}
+
+.maincontain {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ddd;
+    background-color: #fff;
+    padding: 1.5rem;
+    margin-bottom: 80px;
+}
+
+.leftpic {
+    margin: 0 1.5rem 1rem 0;
+}
+
+.footerdark {
+    border-top: .5rem solid #4aaaa5;
+    background-color: #666;
+    color: #ccc;
+    text-align: center;
+    font-size: x-small;
+    padding: 2rem 0 .5em;
+}
+
+.card-title {
+    margin-bottom: 0 !important;
+    text-align: center;
+}
+
+.card-title a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.portfolio-item,
+.form-check-label {
+    margin-bottom: 30px;
+}
