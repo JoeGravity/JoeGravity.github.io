@@ -16,7 +16,7 @@ function renderButtons() {
   for (var i = 0; i < topics.length; i++) {
     // Then dynamicaly generating buttons for each topic in the array
     // This code $("<button>") is all jQuery needs to create the beginning and end tag. (<button></button>)
-    var a = $("<button>");
+    var a = $("<button class='m-1'>");
     // Adding a class of topic-btn to our button
     a.addClass("topic-btn");
     // Adding a data-attribute
@@ -79,13 +79,13 @@ function displayGifs() {
           // Only taking action if the photo has an appropriate rating
           // if (results[i].rating !== "r" && results[i].rating !== "pg-13") {
           // Creating a div with the class "item"
-          var gifDiv = $("<div class='item'>");
+          var gifDiv = $("<div class='item mx-2'>");
 
           // Storing the result item's rating
           var rating = results[i].rating;
 
           // Creating a paragraph tag with the result item's rating
-          var p = $("<p>").text("Rating: " + rating);
+          var p = $("<p class='text-light'>").text("Rating: " + rating);
 
           // Creating an image tag
           var topicImage = $("<img>");
